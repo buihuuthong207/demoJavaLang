@@ -1,10 +1,11 @@
-package demoStringBuffer;
+package demoStringBuilder;
 
-public class StringBuffer1 {
+import java.lang.*;
+public class StringBuilder1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-StringBuffer sb = new StringBuffer("Hello ");
+		StringBuilder sb = new StringBuilder("Hello ");
 		
 		//chèn một chuỗi mới sau chuỗi đã có
 		sb.append("world");
@@ -27,10 +28,10 @@ StringBuffer sb = new StringBuffer("Hello ");
 		System.out.println(sb);
 		
 		//trả về ký tự tại index đã cho
-		System.out.println("ky tu tai index 6: " + sb.charAt(6));
+		System.out.println("ký tự tại index 6: " + sb.charAt(6));
 		
 		//trả về chiều dài của chuỗi
-		System.out.println("do dai cua chuoi: " + sb.length());
+		System.out.println("Độ dài của chuỗi: " + sb.length());
 		
 		sb.reverse();
 		//trả về chuỗi từ vị trí đã cho
@@ -41,5 +42,4 @@ StringBuffer sb = new StringBuffer("Hello ");
 		
 		System.out.println(sb.capacity());
 	}
-
 }
